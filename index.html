@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="nav" class=" border-gray-200 z-50 bg-zinc-900 fixed w-full">
+            <div class="max-w-screen-xl md:px-8 flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span
+                        class="self-center text-2xl font-mono uppercase font-semibold whitespace-nowrap dark:text-white">Star
+                        Life</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-zinc-900 rounded-lg md:hidden hover:bg-zinc-900 focus:outline-none focus:ring-2 focus:ring-zinc-800 dark:text-white dark:hover:bg-zinc-800 dark:focus:ring-zinc-900"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium font-mono flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  md:bg-transparent dark:border-0">
+                        <li>
+                            <a href="#home"
+                                class="block py-2 px-3 text-white transition duration-500 rounded-sm md:bg-transparent  md:p-0 dark:text-white hover:text-gray-400"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#services"
+                                class="block py-2 px-3 text-gray-900 rounded-sm  transition duration-500 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-gray-400  dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 transition duration-500 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-gray-400 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div class="md:flex justify-between items-center md:h-screen pt-24 md:pt-0 px-8">
+            <div class="md:w-1/2 overflow-hidden">
+                <img src="./image/homeImage.jpg" alt="imageCompany" class="w-full">
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+                <h1 class="text-2xl lg:text-4xl xl:text-5xl font-bold text-gray-900 mb-4">
+                    Innovative Digital Solutions to Grow Your Business
+                </h1>
+                <p class="text-sm xl:text-base text-gray-600 mb-8">
+                    We provide professional software services including website development, mobile applications,
+                    and creative graphic design to help your business stand out online and achieve success.
+                </p>
+                <a href="#services"
+                    class="bg-zinc-800 text-white px-6 py-3 rounded font-mono font-medium hover:bg-zinc-950 transition">
+                    Explore Our Services
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="py-16 px-6 text-center" id="services">
+        <h1 class="text-4xl xl:text-5xl font-bold text-gray-900 mb-4">Our Services</h1>
+        <p class="text-base mb-8 mx-auto text-gray-600 leading-8">
+            We offer a wide range of digital services designed to help your business grow online. <br> From website
+            development to mobile apps and creative graphic design — we've got you covered.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto justify-items-center">
+            <div class="border p-6 rounded-lg shadow hover:shadow-lg transition w-full">
+                <h2 class="text-2xl font-semibold mb-2">Website Development</h2>
+                <p class="text-gray-600">We build responsive and high-performing websites tailored to your business
+                    needs.</p>
+            </div>
+
+            <div class="border p-6 rounded-lg shadow hover:shadow-lg transition w-full">
+                <h2 class="text-2xl font-semibold mb-2">Marketing Campaigns</h2>
+                <p class="text-gray-600">We create targeted advertising campaigns across social media platforms.</p>
+            </div>
+
+            <div class="border p-6 rounded-lg shadow hover:shadow-lg transition w-full md:col-span-2 lg:col-span-1">
+                <h2 class="text-2xl font-semibold mb-2">Graphic Design</h2>
+                <p class="text-gray-600">Creative designs for logos, branding, social media, and more.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact" class="p-4">
+        <div class="max-w-3xl mx-auto text-center mb-12">
+            <h1 class="text-4xl xl:text-5xl font-bold text-gray-900 mb-4">Contact Us</h1>
+            <p class="text-gray-600">Have a question, project idea, or need support? We're here to help — just drop us a
+                message!</p>
+        </div>
+
+        <form class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow space-y-6">
+            <div>
+                <label class="block text-left text-gray-700 font-medium mb-2">Name</label>
+                <input type="text" placeholder="Your Name"
+                    class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+
+            <div>
+                <label class="block text-left text-gray-700 font-medium mb-2">Email</label>
+                <input type="email" placeholder="you@example.com"
+                    class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            </div>
+
+            <div>
+                <label class="block text-left text-gray-700 font-medium mb-2">Message</label>
+                <textarea rows="5" placeholder="Type your message..."
+                    class="w-full border border-gray-300 rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-zinc-800 text-white py-3 rounded hover:bg-zinc-900 transition">
+                Send Message
+            </button>
+        </form>
+    </section>
+
+
+    <footer class="bg-zinc-900 p-4">
+        <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 Star Life - All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="#services" class="hover:underline me-4 md:me-6">Services</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#contact" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/main.js"></script>
+</body>
+
+</html>
